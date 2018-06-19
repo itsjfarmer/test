@@ -8,7 +8,7 @@ pipeline {
 	archiveArtifacts artifacts: '*.sh', fingerprint: true
         echo 'build successful for jas-3'
 	sleep 60
-	//error("Build failed")
+	error("Build failed")
       }
     }
   }
