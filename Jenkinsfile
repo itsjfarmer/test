@@ -6,7 +6,7 @@ pipeline {
       steps {
 	writeFile file: "application.sh", text: "echo Built ${BUILD_ID} of ${JOB_NAME}"
 	archiveArtifacts artifacts: '*.sh', fingerprint: true
-	echo "build successful for JAS-263"
+	echo "build successful for JAS-264"
 	//sleep 60
 	//error("Build failed")
       }
